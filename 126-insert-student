@@ -2,4 +2,5 @@ public Id insertStudent(String name, String email) {
     // code here
     apxi_Student__c student = new apxi_Student__c(name = name, email = email);
     insert student;
+    return student;
 }
