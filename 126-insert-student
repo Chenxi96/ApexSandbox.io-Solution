@@ -1,0 +1,5 @@
+public Id insertStudent(String name, String email) {
+    // code here
+    Student student = new Student(Name = name, Email = email);
+    insert student;
+}
