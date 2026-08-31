@@ -5,7 +5,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     course.Name = name;
     course.apxio__Course_Details__c = details;
     System.debug(credits);
-    if(credits != 0 || credits != 1 || credits != 2 || credits != 3 || credits != 4) {
+    if(credits != '0' || credits != '1' || credits != '2' || credits != '3' || credits != '4') {
         course.apxio__Credits__c = null;
     } else {
         course.apxio__Credits__c = credits;
