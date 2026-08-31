@@ -1,6 +1,6 @@
 public String aOrAn(String word) {
     //code here
-    String char = word[0].tolowercase();
+    String char = word.left(1).tolowercase();
     if(char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
         return 'an ' + word;
     } else {
