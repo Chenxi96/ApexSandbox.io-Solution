@@ -1,6 +1,7 @@
 public String aOrAn(String word) {
     //code here
     String char = word.left(1);
+    System.debug(char);
     if(char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
         return 'an ' + word;
     } else {
