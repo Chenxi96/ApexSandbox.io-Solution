@@ -1,0 +1,6 @@
+public Boolean isEndWithZero(Integer num){
+     //code here
+    String numberFormatted = num.format();
+    if(numberFormatted.endswith(0)) return true;
+    return false;
+}
