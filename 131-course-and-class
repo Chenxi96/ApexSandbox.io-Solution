@@ -4,8 +4,6 @@ public void createCourseAndClass(String name, String description) {
     course.Name = name;
     if(description != null) {
         course.apxio__Course_Details__c = description;
-    } else {
-        course.apxio__Course_Details__c = null;
     }
     insert course;
     apxio__Class__c newClass = new apxio__Class__c();
