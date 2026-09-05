@@ -1,7 +1,11 @@
 public Id classFromCourse(String courseName) {
     // code here
     apxio__Course__c course = [SELECT Id FROM apxio__Course__c WHERE Name = :courseName];
-    apxio__Class__c newClass = new apxio__Class__c();
-    newClass.Name = courseName;
-    return newClass.Id;
+    if(course == null) {
+        return null;
+    } else {
+        apxio__Class__c newClass = new apxio__Class__c();
+        newClass.Name = courseName;
+        return newClass.Id;
+    }
 }
