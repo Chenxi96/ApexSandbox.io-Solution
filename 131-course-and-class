@@ -3,7 +3,7 @@ public void createCourseAndClass(String name, String description) {
     apxio__Course__c course = new apxio__Course__c();
     course.Name = name;
     String truncatedText = description.left(255);
-    if(description != null) course.apxio__Course_Details__c = truncatedText;
+    if(description != null) course.apxio__Course_Details__c = description.left(255);
     insert course;
     apxio__Class__c newClass = new apxio__Class__c();
     newClass.apxio__Course__c = course.Id;
